@@ -8,11 +8,17 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>致联盟</title>
+    
     <!--JavaScript框架-->
-    <script>
-        alert("联盟")
-    </script>
-    <!--CSS框架-->
+ <script type="text/javascript">
+      var text = "恭喜解体\n";
+      function button() {
+            console.log('a');
+            document.getElementById("gxgx").innerHTML=text;
+            text += "恭喜解体\n";
+     }
+ </script>
+    
     <style>
         #topic {
             color: red;
@@ -35,18 +41,21 @@
 
 <!--页面-->
 <body id="Body">
+
 <div id="topic_div">
     <!--题目-->
     <h1 id="topic"><em>联盟官方网站</em></h1>
 </div>
-
+    
+    <p><i>联盟是怎么亡的，</i></p><p id="color"><i>被自己批亡的。</i></p>
 <div>
-
+    <button onclick="button()">点击我送上祝福</button>
+    <br></br>
+    <p id="gxgx"></p>
 </div>
-    <p><i>联盟是是怎么亡的，</i></p><p id="color"><i>被自己批亡的。</i></p>
-<div>
 
-</div>
+
+    
 </body>
 <!--底部-->
 </html>
